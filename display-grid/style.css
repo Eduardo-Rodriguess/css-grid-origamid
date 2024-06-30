@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* Grid Container  */
+.grid{
+    display: grid;
+}
+
+.grid-template-columns{
+    grid-template-columns: 200px 200px;
+}
+
+.grid-template-columns-3{
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.subgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+/* Estilos gerais */
+*{
+    font-family: monospace;
+    font-weight: normal;
+}
+.grid{
+    border: 1px solid #ccc;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.item{
+    margin: 5px;
+    background-color: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+}
+

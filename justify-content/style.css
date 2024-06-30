@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 100px 100px 100px;
+}
+
+.start{
+    justify-content: start;
+}
+
+.end{
+    justify-content: end;
+}
+
+.center{
+    justify-content: center;
+}
+
+.stretch{
+    justify-content: stretch;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.item-2, .item-3{
+    grid-row: span 2;
+}
+
+.item-5{
+    grid-column: span 2;
+}
+
+
+/* Estilos gerais */
+*{
+    font-family: monospace;
+    font-weight: normal;
+}
+
+.grid{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.089);
+}
+
+.item{
+    background-color: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* Grid Container  */
+.grid{
+    display: grid;
+}
+
+.grid-template-columns-1{
+    grid-template-columns: repeat(4, 100px);
+}
+
+.grid-template-columns-2{
+    grid-template-columns: 3fr 1fr;/* fr é uma unidade fracional*/
+}
+
+.grid-template-columns-3{
+    grid-template-columns: 1fr 1fr 1fr;/* minmax define um valor mínimo para a coluna*/
+}
+
+.grid-template-columns-4{
+    grid-template-columns: 200px repeat(3, 1fr);/* O repeat vai repetir o número de colunas*/
+}
+
+.grid-template-columns-5{
+    grid-template-columns: repeat(auto-fit, 100px);/* auto-fit vai calcular automaticamente o total de colunas
+    */
+}
+
+.grid-template-columns-6{
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));/* */
+    max-width: 800px !important;
+}
+
+.grid-template-columns-7{
+    grid-template-columns: repeat(auto-fill, minmax(100px, auto));/* */
+    max-width: 800px !important;
+}
+
+
+
+/* Estilos gerais */
+*{
+    font-family: monospace;
+    font-weight: normal;
+}
+.grid{
+    border: 1px solid #ccc;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.item{
+    margin: 5px;
+    background-color: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+}
+
